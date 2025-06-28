@@ -1,31 +1,33 @@
-# Image-Classification-with-Zero-Shot---No-Training
-A Jupyter Notebook demonstrating zero-shot image classification using OpenAI's CLIP model with custom text prompts.
+# 🧠 CLIP Image Classification with Zero-Shot Learning
 
-🧠 CLIP Image Classification with Zero-Shot Learning
-This Jupyter Notebook demonstrates how to use OpenAI's CLIP (Contrastive Language–Image Pre-training) model for zero-shot image classification. Instead of relying on traditional supervised learning with labeled datasets, CLIP leverages natural language to perform classification — making it incredibly flexible and useful for a wide range of real-world applications.
+This repository contains a Jupyter Notebook demonstrating how to use OpenAI's CLIP (Contrastive Language–Image Pre-training) model for zero-shot image classification. Instead of requiring labeled datasets, CLIP can classify images using natural language text prompts.
 
-📌 Features:
-Utilizes a pre-trained CLIP model from openai/clip-vit-base-patch32
+## 🚀 Features
 
-Supports zero-shot predictions using a list of class names (text prompts)
+- 🔍 Zero-shot image classification with no model training required
+- 🧠 Uses text prompts to dynamically label images
+- 🖼️ Displays input image and top predicted class with confidence scores
 
-Visualizes input images and displays prediction results
+## 📁 Files
 
-No model training required — plug and play classification
+- `CLIP_Image_Classification_with_zero_shot.ipynb` — Main notebook with step-by-step implementation
 
-🔧 Requirements:
+## 📦 Requirements
 
-processors, model
+Install the necessary libraries before running the notebook:
 
-torch
+```bash
+pip install torch torchvision transformers matplotlib pillow
+```
 
-PIL
-
-matplotlib
-
-📸 Example Use Case:
-Upload an image and classify it into custom categories such as:
+## Example
 
 ["a photo of a cat", "a photo of a dog", "a photo of a zebra crossing", "a photo of a bus"]
 
-The model will rank the text prompts based on the image content.
+📜 Reference
+CLIP Paper (OpenAI)
+
+Hugging Face Transformers - CLIP
+
+
+
